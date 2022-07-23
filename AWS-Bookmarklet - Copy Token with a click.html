@@ -1,0 +1,204 @@
+<html>
+    <body>
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+        </div >
+        <div class="context">
+            <h3>1. Enable Bookmark Section in chrome - Command + Shift + B</h1>
+            <h3>2. Drag the below link to the bookmark section to add it</h1>
+            <h1><a  style="color: orange;" href="javascript:(function(){  var AWSStr = JSON.stringify({    AWS_ACCESS_KEY_ID: document.getElementById(&quot;accessKeyId&quot;).value,    AWS_SECRET_ACCESS_KEY: document.getElementById(&quot;secretAccessKey&quot;).value,    AWS_SESSION_TOKEN: document.getElementById(&quot;sessionToken&quot;).value,  });  AWSStr = (AWSStr.substring(1,AWSStr.length-1)+',').replaceAll('&quot;,','&quot;,\n');  document.getElementsByClassName(&quot;pane&quot;)[0].innerHTML = &quot;<div><h3>Option Solar: Custom From Bookmarklet <span style='font-size:20px;'>😀%3C/span%3E%3C/h3%3E%3Cbr/%3E%3Ctextarea%20class='code-section'%20id='tocopy'%20style='width:%20642px;%20height:%2062px;'%3E%22+AWSStr+%22%3C/textarea%3E%3Ca%20class='copy-value'%20id='copyButton'%3ECopy%3C/a%3E%3C/div%3E%22;%20%20var%20el%20=%20document.getElementById(%22copyButton%22);%20%20el.onclick%20=%20function()%20{%20%20%20%20navigator.clipboard.writeText(document.getElementById(%22tocopy%22).value);%20%20};%20%20el.click();})();" add_date="1430020368">CopyAWS</a></H1>
+            <br />
+            <h6>Optional - Customize the bookmarlet code</h6>
+            <pre style="width: 90wh; overflow: auto">
+                <code style="color: white;">
+                javascript:(function(){
+                    var AWSStr = JSON.stringify({
+                      AWS_ACCESS_KEY_ID: document.getElementById("accessKeyId").value,
+                      AWS_SECRET_ACCESS_KEY: document.getElementById("secretAccessKey").value,
+                      AWS_SESSION_TOKEN: document.getElementById("sessionToken").value,
+                    });
+                    AWSStr = (AWSStr.substring(1,AWSStr.length-1)+',').replaceAll('",','",\n');
+                    document.getElementsByClassName("pane")[0].innerHTML = "&ltdiv>&lth3>Option Solar: Custom From Bookmarklet &ltspan style='font-size:20px;'>&#128512;&lt/span>&lt/h3>&ltbr/>&lttextarea class='code-section' id='tocopy' style='width: 642px; height: 62px;'>"+AWSStr+"&lt/textarea>&lta class='copy-value' id='copyButton'>Copy&lt/a>&lt/div>";
+                    var el = document.getElementById("copyButton");
+                    el.onclick = function() {
+                      navigator.clipboard.writeText(document.getElementById("tocopy").value);
+                    };
+                    el.click();
+                  })();
+                </code>
+            </pre>
+        </div>
+    
+    
+    </body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: 'Exo', sans-serif;
+        }
+
+
+        .context {
+            width: 100%;
+            position: absolute;
+            top:30vh;
+            
+        }
+
+        .context h1{
+            text-align: center;
+            color: #fff;
+            font-size: 60px;
+        }
+
+        .context h3{
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .context h6{
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .area{
+            background: #4e54c8;  
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+            width: 100%;
+            height:100vh;
+        }
+
+        .circles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .circles li{
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+            
+        }
+
+        .circles li:nth-child(1){
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+
+        .circles li:nth-child(2){
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3){
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4){
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5){
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6){
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7){
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8){
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9){
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10){
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+
+
+        @keyframes animate {
+
+            0%{
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100%{
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+
+        }
+    </style>
+</html>
